@@ -1,7 +1,5 @@
 # Detection-of-Face-Swap-based-Deep-Fake-Videos
 
-# Detection of Face-Swap Based Deepfake Videos
-
 ## Introduction
 This project focuses on detecting **face-swap-based deepfake videos** using deep learning techniques. The model leverages **ResNext** for feature extraction and **LSTM** for temporal pattern analysis to distinguish between real and fake videos.
 
