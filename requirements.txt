@@ -1,0 +1,16 @@
+streamlit
+tensorflow
+torch
+torchvision
+torchaudio
+opencv-python
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+tqdm
+Pillow
+moviepy
+ffmpeg
+requests
