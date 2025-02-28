@@ -2,21 +2,16 @@ import tensorflow as tf
 import numpy as np
 import cv2
 import os
-# Load trained model
 
+
+# Load model from the same directory
 model_path = os.path.join(os.path.dirname(__file__), "model", "deepfake_model.h5")
 
-# Check if the model exists in deployment
 if not os.path.exists(model_path):
-    raise FileNotFoundError(f"🚨 Model file NOT found at {model_path}")
+    raise FileNotFoundError(f"Model file not found at {model_path}")
 
-print(f"✅ Model found at {model_path}, attempting to load...")
+model = tf.keras.models.load_model(model_path)
 
-# Try loading the model
-try:
-    model = tf.keras.models.load_model(model_path)
-except Exception as e:
-    raise OSError(f"🚨 Error loading model: {e}")
 
 
 # Function to extract frames and predict deepfake probability
