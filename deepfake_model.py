@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 # Load trained model
-model_path = "deepfake_model.h5"  # Update with your actual model path
+model_path = "model/deepfake_model.h5"  
 model = tf.keras.models.load_model(model_path)
 
 
