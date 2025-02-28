@@ -21,7 +21,7 @@ if page == "Home":
         "This application uses advanced deep learning models to analyze videos and detect deepfake content. "
         "It provides an easy-to-use interface for uploading videos and getting predictions."
     )
-    st.image("deepfake_example.png", caption="Example of a deepfake video")
+    st.image("static/deepfake_example.png", caption="Deepfake Detection", use_column_width=True)
 
     st.subheader("🔹 Features:")
     st.markdown("""
@@ -105,7 +105,7 @@ elif page == "How It Works":
     - 🎞 **Frame-wise Confidence Scoring** to detect motion inconsistencies  
     - 🔬 **Deep Learning Models** trained on real and fake datasets  
     """)
-    st.image("model_architecture.png", caption="Model Architecture")
+    st.image("static/model_architecture.png", caption="Model Arcitecture", use_column_width=True)
 
 # Feedback Page
 elif page == "Feedback":
