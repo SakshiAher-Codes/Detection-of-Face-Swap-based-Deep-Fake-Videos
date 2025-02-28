@@ -4,18 +4,20 @@ import cv2
 import os
 # Load trained model
 
-# Adjust the model path
 model_path = os.path.join(os.path.dirname(__file__), "model", "deepfake_model.h5")
 
-# Debugging: Check if model exists
+# Check if the model exists in deployment
 if not os.path.exists(model_path):
     raise FileNotFoundError(f"🚨 Model file NOT found at {model_path}")
 
-# Load the model
+print(f"✅ Model found at {model_path}, attempting to load...")
+
+# Try loading the model
 try:
     model = tf.keras.models.load_model(model_path)
 except Exception as e:
     raise OSError(f"🚨 Error loading model: {e}")
+
 
 # Function to extract frames and predict deepfake probability
 def detect_deep_fake(video_path):
