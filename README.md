@@ -1,77 +1,51 @@
 # Detection-of-Face-Swap-based-Deep-Fake-Videos
 
-📌 Repository Description
+# Detection of Face-Swap Based Deepfake Videos
 
-This project focuses on detecting deepfake videos using a combination of Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks. It provides a user-friendly interface for uploading videos and obtaining deepfake detection results.
+## Introduction
+This project focuses on detecting **face-swap-based deepfake videos** using deep learning techniques. The model leverages **ResNext** for feature extraction and **LSTM** for temporal pattern analysis to distinguish between real and fake videos.
 
-📄 Features
+## Features
+- 🎥 **Upload and analyze videos easily**  
+- 📊 **Confidence scores with frame-by-frame analysis**  
+- 🧠 **AI-powered deepfake detection using CNN & RNN models**  
+- 🔍 **Real-time feedback and insights**  
 
-🎥 Video Frame Extraction: Extracts frames from videos for analysis.
+## Installation
+### Requirements
+- Python 3.8+  
+- TensorFlow / PyTorch  
+- OpenCV  
+- Streamlit  
 
-🧠 Deep Learning Model: Uses CNN for spatial feature extraction and LSTM for temporal dependencies.
+### Setup
 
-📊 Confidence Scoring: Provides a confidence score for deepfake detection.
-
-🔍 Frame-by-Frame Analysis: Detects inconsistencies across video frames.
-
-🖼️ Data Augmentation: Enhances model performance with augmented training data.
-
-📁 Project Structure
-
-DeepFake-Detection/
-│── data/                # Dataset (real & fake videos)
-│── models/              # Trained model files
-│── src/                 # Source code for model training & evaluation
-│── app.py               # Streamlit-based web interface
-│── deepfake_model.py    # Core detection logic
-│── requirements.txt     # Required dependencies
-│── README.md            # Project documentation
-
-🚀 Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/deepfake-detection.git
+#### Clone the repository
+git clone https://github.com/yourusername/deepfake-detection.git
 cd deepfake-detection
 
-Install dependencies:
-
+#### Install dependencies
 pip install -r requirements.txt
 
-Run the application:
+#### Run the Streamlit app
+streamlit run app.py 
 
-streamlit run app.py
+## Usage
+1. Upload a video file in the application.
+2. Click the Analyze Video button to start detection.
+3. View the detection results, including confidence scores and analysis graphs.
+4. Model Details
+5. ResNext: Extracts features from video frames.
+6. LSTM: Analyzes temporal patterns to distinguish real vs. fake videos.
+7. Data Augmentation: Used to improve model generalization.
 
-🛠 Model Training
 
-To train the model, execute:
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-python src/train_model.py
 
-This will train the CNN-LSTM model on your dataset.
-
-📈 Deep Fake Detection
-
-After training, test the detection using:
-
-python src/detect.py --video test_video.mp4
-
-This will analyze the video and return the prediction.
-
-📢 Contribution
-
-We welcome contributions! You can fix this repository, create a branch, and submit a pull request.
-
-📜 License
-
+License
 This project is licensed under the MIT License.
-
-🔗 Developed by: Sakshi Aher and Team
-
-
-
-
-
 
 
 
