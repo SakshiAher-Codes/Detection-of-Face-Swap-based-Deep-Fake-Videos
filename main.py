@@ -5,7 +5,14 @@ import time
 import numpy as np
 from deepfake_model import detect_deep_fake, generate_pdf_report
 import tempfile
+import gdown
 
+# Google Drive file ID
+file_id = "1UiYjPQBC-mZO4qETov4C6oFlnSNeSf2i"  
+
+# Download the file
+output = "deepfake_model.h5" 
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
 st.set_page_config(page_title="Deep Fake Detection", layout="wide")
 
 st.title("🔍 Deep Fake Detection Application")
