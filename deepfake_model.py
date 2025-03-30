@@ -5,11 +5,20 @@ import tempfile
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
-# Load trained model
+# Google Drive file ID
+file_id = "1UiYjPQBC-mZO4qETov4C6oFlnSNeSf2i"  
 model_path = "deepfake_model.h5"
-model = tf.keras.models.load_model(model_path)
 
-# Function to detect deepfake in a video
+# Function to download model
+@st.cache_resource  # Cache model download to prevent re-downloading
+def load_model():
+    gdown.download(f"https://drive.google.com/uc?id={file_id}", model_path, quiet=False)
+    return tf.keras.models.load_model(model_path)
+
+# Load the model
+model = load_model()
+
+# Function to detect deepfakes in a video
 def detect_deep_fake(video_path):
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
