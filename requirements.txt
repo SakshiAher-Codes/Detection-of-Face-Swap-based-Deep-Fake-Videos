@@ -15,3 +15,5 @@ moviepy
 ffmpeg
 requests
 h5py
+gdown
+reportlab
