@@ -12,7 +12,7 @@ file_id = "1UiYjPQBC-mZO4qETov4C6oFlnSNeSf2i"
 model_path = "deepfake_model.h5"
 
 # Function to download model
-@st.cache(allow_output_mutation=True)  # ✅ Compatible with older Streamlit versions
+@st.cache_resource(allow_output_mutation=True)  # ✅ Compatible with older Streamlit versions
 def load_model():
     gdown.download(f"https://drive.google.com/uc?id={file_id}", model_path, quiet=False)
     return tf.keras.models.load_model(model_path)
