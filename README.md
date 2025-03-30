@@ -1,46 +1,91 @@
-# Detection-of-Face-Swap-based-Deep-Fake-Videos
+# Deepfake Detection Using CNN & RNN
 
-## Introduction
-This project focuses on detecting **face-swap-based deepfake videos** using deep learning techniques. The model leverages **ResNext** for feature extraction and **LSTM** for temporal pattern analysis to distinguish between real and fake videos.
+## Project Overview
+This project detects **face-swap-based deepfake videos** using a deep learning model built with **CNN (ResNext) and RNN (LSTM)**. The model analyzes video frames to determine whether a video is **real or fake**.
 
 ## Features
-- 🎥 **Upload and analyze videos easily**  
-- 📊 **Confidence scores with frame-by-frame analysis**  
-- 🧠 **AI-powered deepfake detection using CNN & RNN models**  
-- 🔍 **Real-time feedback and insights**  
+- **Deepfake Detection:** Analyzes videos frame by frame.
+- **Confidence Score:** Provides a probability of whether the video is fake.
+- **PDF Report Generation:** Generates a detailed report on the analysis.
+- **User-Friendly Web Interface:** Allows easy video uploads and model predictions.
 
-## Installation
-### Requirements
-- Python 3.8+  
-- TensorFlow / PyTorch  
-- OpenCV  
-- Streamlit  
+---
 
-### Setup
+## 1️⃣ Installation & Setup
+### **Prerequisites:**
+- Python 3.8+
+- pip (Python package manager)
+- Virtual environment (optional but recommended)
 
-#### Clone the repository
-git clone https://github.com/yourusername/deepfake-detection.git
-cd deepfake-detection
+### **Step 1: Clone the Repository**
+```sh
+git clone https://github.com/SakshiAher-Codes/Detection-of-Face-Swap-based-Deep-Fake-Videos.git
+cd Detection-of-Face-Swap-based-Deep-Fake-Videos
+```
 
-#### Install dependencies
+### **Step 2: Install Dependencies**
+Ensure you have all required dependencies installed by running:
+```sh
 pip install -r requirements.txt
+```
 
-#### Run the Streamlit app
-streamlit run app.py 
+### **Step 3: Run the Application Locally**
+```sh
+streamlit run main.py
+```
+This will open the Streamlit web app in your browser.
 
-## Usage
-1. Upload a video file in the application.
-2. Click the Analyze Video button to start detection.
-3. View the detection results, including confidence scores and analysis graphs.
-4. Model Details
-5. ResNext: Extracts features from video frames.
-6. LSTM: Analyzes temporal patterns to distinguish real vs. fake videos.
-7. Data Augmentation: Used to improve model generalization.
+---
 
+## 2️⃣ Understanding the Deepfake Detection Process
+### **1. Video Processing**
+- Extracts frames from the uploaded video.
+- Preprocesses frames by resizing and normalizing them.
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+### **2. Model Prediction**
+- Each frame is passed through the trained **ResNext + LSTM** model.
+- The model assigns a confidence score indicating if the frame is fake or real.
 
+### **3. Report Generation**
+- Calculates an overall confidence score for the video.
+- Generates a **detailed PDF report** with frame-wise analysis.
+
+---
+
+## 3️⃣ File Structure
+```
+📁 Detection-of-Face-Swap-based-Deep-Fake-Videos
+│── 📄 main.py  # Streamlit app interface
+│── 📄 deepfake_model.py  # Deepfake detection functions
+│── 📄 requirements.txt  # Required Python packages
+│── 📄 README.txt  # Project documentation
+```
+
+---
+
+## 4️⃣ Troubleshooting
+### **Error: ModuleNotFoundError: No module named 'gdown'**
+Fix: Install `gdown` manually:
+```sh
+pip install gdown
+```
+
+### **Error: NameError: name 'st' is not defined**
+Fix: Ensure `import streamlit as st` is present at the top of `main.py`.
+
+### **Error: Yowza, that’s a big file (>25MB)!**
+Fix: Store the model on **Google Drive** and use:
+```python
+import gdown
+gdown.download("https://drive.google.com/uc?id=1UiYjPQBC-mZO4qETov4C6oFlnSNeSf2i", "deepfake_model.h5", quiet=False)
+```
+
+---
+
+## 📩 Contact
+For any queries, feel free to reach out at **biz.sakshiaher@gmail.com**.
+
+Happy Coding! 🚀
 
 
 
