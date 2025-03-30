@@ -82,11 +82,38 @@ gdown.download("https://drive.google.com/uc?id=1UiYjPQBC-mZO4qETov4C6oFlnSNeSf2i
 
 ---
 
+## 5️⃣ Required Software & Platforms
+
+### **Software Required**
+- **Python (Version 3.8+)** – Core language for the project
+- **pip** – Python package manager for installing dependencies
+- **Streamlit** – To create the web interface
+- **TensorFlow / Keras** – For deep learning model operations
+- **OpenCV** – To process video frames
+- **ReportLab** – To generate PDF reports
+- **gdown** – To download the model from Google Drive
+
+### **Platforms Required**
+- **Operating System**: Works on Windows, macOS, and Linux
+- **Python Environment**: Recommended to use **virtual environment** for package isolation
+- **Google Drive**: To store and access the trained deepfake model
+- **Streamlit Cloud** *(optional)*: If deploying the application online
+
+---
+
 ## 📩 Contact
 For any queries, feel free to reach out at **biz.sakshiaher@gmail.com**.
 
+### **Project Team**
+- **Sakshi Kishor Aher**  
+  📞 7058556378  
+  ✉ biz.sakshiaher@gmail.com  
+- **Anushka Anil Pagare**  
+  📞 9322545134  
+  ✉ anushkapagare666@gmail.com  
+- **Namrata Ramkrishna Parkhe**  
+  📞 9021416097  
+  ✉ parkhenamrata4@gmail.com
+
 Happy Coding! 🚀
-
-
-
 
