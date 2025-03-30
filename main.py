@@ -155,6 +155,6 @@ elif page == "About":
         "This Deep Fake Detection Application helps users identify deepfake videos using state-of-the-art AI models. "
         "It provides an interactive interface for video analysis and insights."
     )
-    st.write("For more details, visit our [GitHub Repository](https://github.com/example-repo).")
+    st.write("For more details, visit our [GitHub Repository](https://github.com/SakshiAher-Codes/Detection-of-Face-Swap-based-Deep-Fake-Videos).")
 
 st.sidebar.write("👨‍💻 Developed by Sakshi Aher and Team")
