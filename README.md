@@ -104,16 +104,5 @@ gdown.download("https://drive.google.com/uc?id=1UiYjPQBC-mZO4qETov4C6oFlnSNeSf2i
 ## 📩 Contact
 For any queries, feel free to reach out at **biz.sakshiaher@gmail.com**.
 
-### **Project Team**
-- **Sakshi Kishor Aher**  
-  📞 7058556378  
-  ✉ biz.sakshiaher@gmail.com  
-- **Anushka Anil Pagare**  
-  📞 9322545134  
-  ✉ anushkapagare666@gmail.com  
-- **Namrata Ramkrishna Parkhe**  
-  📞 9021416097  
-  ✉ parkhenamrata4@gmail.com
-
 Happy Coding! 🚀
 
